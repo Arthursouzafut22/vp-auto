@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "data": "vie. 06 jun.",
+    "desde": "10:00",
+    "cidade": "Lorient",
+    "online": "Online and Live",
+    "oportunidad": "Última oportunidad",
+    "numero": 174,
+    "lotes": "Últimos lotes disponibles",
+    "fotos": ["imageVendas/venda1.jpg", "imageVendas/venda1Dta1.jpg"]
+  },
+  {
+    "id": 2,
+    "data": "vie. 13 jun.",
+    "desde": "09:30",
+    "cidade": "Paris",
+    "online": "Online and Live",
+    "oportunidad": "Última oportunidad",
+    "numero": 123,
+    "lotes": "Últimos lotes disponibles",
+    "fotos": ["imageVendas/venda2.jpg", "imageVendas/venda2Dta1.jpg"]
+  },
+  {
+    "id": 3,
+    "data": "lun. 09 jun.",
+    "desde": "09:30",
+    "cidade": "Lille",
+    "online": "Room and Live",
+    "oportunidad": "Última oportunidad",
+    "numero": 202,
+    "lotes": "Últimos lotes disponibles",
+    "fotos": ["imageVendas/venda3.jpg", "imageVendas/venda3Dta1.jpg"]
+  },
+  {
+    "id": 4,
+    "data": "vie. 13 jun.",
+    "desde": "13:30",
+    "cidade": "Bordeaux",
+    "online": "Room and Live",
+    "oportunidad": "Última oportunidad",
+    "numero": 127,
+    "lotes": "Últimos lotes disponibles",
+    "fotos": ["imageVendas/venda4.jpg", "imageVendas/venda4Dta1.jpg"]
+  },
+  {
+    "id": 5,
+    "data": "vie. 13 jun.",
+    "desde": "15:00",
+    "cidade": "Lorient",
+    "online": "Room and Live",
+    "oportunidad": "Última oportunidad",
+    "numero": 127,
+    "lotes": "Últimos lotes disponibles",
+    "fotos": ["imageVendas/venda5.jpg", "imageVendas/venda5Dta1.jpg"]
+  }
+]
