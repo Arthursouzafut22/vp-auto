@@ -62,10 +62,10 @@
       "altura": "NC"
     },
     "fotos": [
-      "imageCarrosel/carro1.jpg",
-      "imageCarrosel/carroDt2.jpg",
-      "imageCarrosel/carroDt3.jpg",
-      "imageCarrosel/carroDt4.jpg"
+      "/imageCarrosel/carro1.jpg",
+      "/imageCarrosel/carroDt2.jpg",
+      "/imageCarrosel/carroDt3.jpg",
+      "/imageCarrosel/carroDt4.jpg"
     ]
   },
   {
@@ -116,10 +116,10 @@
       "altura": "NC"
     },
     "fotos": [
-      "imageCarrosel/carro2.jpg",
-      "imageCarrosel/carro2Dt1.jpg",
-      "imageCarrosel/carro2Dt2.jpg",
-      "imageCarrosel/carro2Dt3.jpg"
+      "/imageCarrosel/carro2.jpg",
+      "/imageCarrosel/carro2Dt1.jpg",
+      "/imageCarrosel/carro2Dt2.jpg",
+      "/imageCarrosel/carro2Dt3.jpg"
     ]
   },
   {
@@ -180,10 +180,10 @@
       "altura": 175
     },
     "fotos": [
-      "imageCarrosel/carro3.jpg",
-      "imageCarrosel/carro3Dt1.jpg",
-      "imageCarrosel/carro3Dt2.jpg",
-      "imageCarrosel/carro3Dt3.jpg"
+      "/imageCarrosel/carro3.jpg",
+      "/imageCarrosel/carro3Dt1.jpg",
+      "/imageCarrosel/carro3Dt2.jpg",
+      "/imageCarrosel/carro3Dt3.jpg"
     ]
   },
   {
@@ -230,10 +230,10 @@
       "altura": 175
     },
     "fotos": [
-      "imageCarrosel/carro4.jpg",
-      "imageCarrosel/carro4Dt1.jpg",
-      "imageCarrosel/carro4Dt2.jpg",
-      "imageCarrosel/carro4Dt3.jpg"
+      "/imageCarrosel/carro4.jpg",
+      "/imageCarrosel/carro4Dt1.jpg",
+      "/imageCarrosel/carro4Dt2.jpg",
+      "/imageCarrosel/carro4Dt3.jpg"
     ]
   },
   {
@@ -296,10 +296,10 @@
       "altura": 145
     },
     "fotos": [
-      "imageCarrosel/carro5.jpg",
-      "imageCarrosel/carro5Dt1.jpg",
-      "imageCarrosel/carro5Dt2.jpg",
-      "imageCarrosel/carro5Dt3.jpg"
+      "/imageCarrosel/carro5.jpg",
+      "/imageCarrosel/carro5Dt1.jpg",
+      "/imageCarrosel/carro5Dt2.jpg",
+      "/imageCarrosel/carro5Dt3.jpg"
     ]
   },
   {
@@ -362,10 +362,10 @@
       "altura": 145
     },
     "fotos": [
-      "imageCarrosel/carro6.jpg",
-      "imageCarrosel/carro6Dt1.jpg",
-      "imageCarrosel/carro6Dt2.jpg",
-      "imageCarrosel/carro6Dt3.jpg"
+      "/imageCarrosel/carro6.jpg",
+      "/imageCarrosel/carro6Dt1.jpg",
+      "/imageCarrosel/carro6Dt2.jpg",
+      "/imageCarrosel/carro6Dt3.jpg"
     ]
   },
   {
@@ -425,10 +425,10 @@
       "altura": 156
     },
     "fotos": [
-      "imageCarrosel/carro7.jpg",
-      "imageCarrosel/carro7Dt1.jpg",
-      "imageCarrosel/carro7Dt2.jpg",
-      "imageCarrosel/carro7Dt3.jpg"
+      "/imageCarrosel/carro7.jpg",
+      "/imageCarrosel/carro7Dt1.jpg",
+      "/imageCarrosel/carro7Dt2.jpg",
+      "/imageCarrosel/carro7Dt3.jpg"
     ]
   },
   {
@@ -488,10 +488,10 @@
       "altura": 236
     },
     "fotos": [
-      "imageCarrosel/carro8.jpg",
-      "imageCarrosel/carro8Dt1.jpg",
-      "imageCarrosel/carro8Dt2.jpg",
-      "imageCarrosel/carro8Dt3.jpg"
+      "/imageCarrosel/carro8.jpg",
+      "/imageCarrosel/carro8Dt1.jpg",
+      "/imageCarrosel/carro8Dt2.jpg",
+      "/imageCarrosel/carro8Dt3.jpg"
     ]
   },
   {
@@ -551,10 +551,10 @@
       "altura": 144
     },
     "fotos": [
-      "imageCarrosel/carro9.jpg",
-      "imageCarrosel/carro9Dt1.jpg",
-      "imageCarrosel/carro9Dt2.jpg",
-      "imageCarrosel/carro9Dt3.jpg"
+      "/imageCarrosel/carro9.jpg",
+      "/imageCarrosel/carro9Dt1.jpg",
+      "/imageCarrosel/carro9Dt2.jpg",
+      "/imageCarrosel/carro9Dt3.jpg"
     ]
   }
 ]

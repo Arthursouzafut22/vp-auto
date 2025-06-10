@@ -10,7 +10,7 @@ export default function Vendas() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("public/data/cardsVendas.json");
+      const response = await fetch("/data/cardsVendas.json");
       const json = await response.json();
       setDados(json);
       console.log(json);

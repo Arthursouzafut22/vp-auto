@@ -14,7 +14,7 @@ export default function Carrosel() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch("public/data/carrosel.json");
+      const response = await fetch("/data/carrosel.json");
       const json = await response.json();
       setDados(json);
     })();
