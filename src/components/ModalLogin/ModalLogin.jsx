@@ -1,3 +1,4 @@
+import { UseGeral } from "../../context/geralContext";
 import useMedia from "../../Hooks/useMedia";
 import * as S from "./styles";
 import { useNavigate } from "react-router-dom";
@@ -11,12 +12,17 @@ const urlImage2 =
 export default function ModalLogin() {
   const navigate = useNavigate();
   const { mobile } = useMedia("(max-width:767px)");
+  const { modalLoginCriar } = UseGeral();
 
   return (
-    <S.ContainerModal onClick={(event) => event.stopPropagation()} style={{
-      maxWidth: mobile && "initial", width: mobile && "95%"
-    }}>
-      <S.Wrapper1 onClick={() => navigate("/")}>
+    <S.ContainerModal
+      onClick={(event) => event.stopPropagation()}
+      style={{
+        maxWidth: mobile && "initial",
+        width: mobile && "95%",
+      }}
+    >
+      <S.Wrapper1 onClick={modalLoginCriar}>
         <div className="caixa-1">
           <img src={urlImage1} width={50} />
           <div style={{ borderBottom: "0.5px solid #0F4D71" }}>

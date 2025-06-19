@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import * as S from "./styles";
 import CardCarrosel from "./Card";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,17 +7,10 @@ import "swiper/css/navigation";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Vendas from "../Vendas/Vendas";
 import Garantia from "../Garantia/Garantia";
+import { useFetch } from "../../Hooks/useFetch";
 
 export default function Carrosel() {
-  const [dados, setDados] = useState([]);
-
-  useEffect(() => {
-    (async () => {
-      const response = await fetch("/data/carrosel.json");
-      const json = await response.json();
-      setDados(json);
-    })();
-  }, []);
+  const { dados } = useFetch();
 
   return (
     <S.ContainerCarrosel>
@@ -39,7 +31,7 @@ export default function Carrosel() {
             }}
             loop={true}
             autoplay={{
-              delay: 3000, 
+              delay: 3000,
               disableOnInteraction: false,
             }}
             breakpoints={{
@@ -57,7 +49,7 @@ export default function Carrosel() {
               },
             }}
           >
-            {dados.map((item) => (
+            {dados.slice(0, 9).map((item) => (
               <SwiperSlide>
                 <CardCarrosel key={item.id} item={item} />
               </SwiperSlide>
@@ -70,7 +62,7 @@ export default function Carrosel() {
       </S.WrapperCarrosel>
 
       <Vendas />
-      <Garantia/>
+      <Garantia />
     </S.ContainerCarrosel>
   );
 }

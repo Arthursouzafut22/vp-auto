@@ -13,7 +13,6 @@ export default function Vendas() {
       const response = await fetch("/data/cardsVendas.json");
       const json = await response.json();
       setDados(json);
-      console.log(json);
     })();
   }, []);
 

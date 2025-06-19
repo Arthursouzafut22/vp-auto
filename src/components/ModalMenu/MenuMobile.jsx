@@ -16,7 +16,7 @@ export function MenuMobile(closeMenuMobile) {
   const navigate = useNavigate();
 
   return (
-    <S.ContainerMenuMobile onClick={(event) => event.stopPropagation()}>
+    <S.ContainerMenuMobile onClick={(event) => event.stopPropagation()} style={{zIndex:"88"}}>
       <S.Container1>
         <Link
           style={{

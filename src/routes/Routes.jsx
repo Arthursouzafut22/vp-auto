@@ -1,20 +1,26 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import Header from "../components/Header/Header";
 import IsHeader from "../components/Header/IsHeader";
 import Footer from "../components/Footer/Footer";
+import Vehiculo from "../pages/Vehiculo/Vehiculo";
+import Teste from "../pages/Teste";
+import ModalCriarContaeLogar from "../components/CriarConta/ModalCriarContaeLogar";
+import { UseGeral } from "../context/geralContext";
+import CriarConta from "../pages/CriarConta/CriarConta";
 
 const Router = () => {
+  const { activeModalLogin } = UseGeral();
   return (
     <BrowserRouter>
-      <IsHeader/>
+      <IsHeader />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/imoveis" element={<Imoveis />} />
-            <Route path="/imoveis/:id" element={<ImovelInformation />} />
-            <Route path="/add" element={<ToAddImoveis />} /> */}
+        <Route path="/vehiculo/:id" element={<Vehiculo />} />
+        <Route path="/teste" element={<Teste />} />
+        <Route path="/inscripcion" element={<CriarConta/>} />
       </Routes>
-      <Footer/>
+      {activeModalLogin && <ModalCriarContaeLogar />}
+      <Footer />
     </BrowserRouter>
   );
 };

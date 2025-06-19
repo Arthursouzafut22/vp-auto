@@ -7,7 +7,9 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 15px 20px;
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   span :hover {
     color: red;
@@ -125,4 +127,5 @@ export const HeaderMobile = styled.header`
   padding: 15px 20px;
   background-color: #ffffff;
   position: relative;
+  box-shadow: 0 0 20px 0 rgba(46, 40, 64, 0.5);
 `;

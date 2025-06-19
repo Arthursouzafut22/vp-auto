@@ -1,5 +1,5 @@
 import Logo from "../../assets/image/logo.webp";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaChevronDown, FaBars } from "react-icons/fa";
 import * as S from "./styles";
 import { useCallback, useEffect, useState } from "react";
@@ -8,15 +8,17 @@ import useMedia from "../../Hooks/useMedia";
 import { MenuMobile } from "../ModalMenu/MenuMobile";
 import { ContainerLogin } from "./ContainerLogin";
 import ContainerMenu from "./ContainerMenu";
+import { UseGeral } from "../../context/geralContext";
 
 const urlBandeira =
   "https://static.vpauto.fr/bundles/vpauto/frontend/images/drapeaux/icon-flag-es.svg?v20250430";
 
 export default function Header() {
-  const [modalAtivo, setModalAtivo] = useState(false);
   const [menuAtivo, setMenuAtivo] = useState(false);
   const [menuMobile, setMenuMobile] = useState(false);
   const { mobile } = useMedia("(max-width:1150px)");
+  const navigate = useNavigate();
+  const { modalAtivo, setModalAtivo } = UseGeral();
 
   useEffect(() => {
     function closeModalGlobal() {
@@ -30,14 +32,17 @@ export default function Header() {
     return () => {
       document.removeEventListener("click", closeModalGlobal);
     };
-  }, []);
+  }, [setModalAtivo]);
 
-  const openModal = useCallback((event) => {
-    event.stopPropagation();
-    if (event.currentTarget === event.currentTarget) {
-      setModalAtivo((prev) => !prev);
-    }
-  }, []);
+  const openModal = useCallback(
+    (event) => {
+      event.stopPropagation();
+      if (event.currentTarget === event.currentTarget) {
+        setModalAtivo((prev) => !prev);
+      }
+    },
+    [setModalAtivo]
+  );
 
   const openModalMenu = useCallback(
     (event) => {
@@ -60,7 +65,13 @@ export default function Header() {
   return (
     <S.Header>
       <S.Wrapper1>
-        <img src={Logo} alt="vp-auto" width={90} />
+        <img
+          src={Logo}
+          alt="vp-auto"
+          width={90}
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate("/")}
+        />
 
         <ContainerMenu openModalMenu={openModalMenu} />
         {!mobile && (

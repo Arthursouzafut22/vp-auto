@@ -4,6 +4,7 @@
     "nome": "RENAULT MASTER BENNE DOUBLE CABINE PROPULSION L3 3.5t dCi 165 ENERGY CONFORT RJ",
     "n": 502,
     "km": "2020 - 75278 km",
+    "cidade":"LORIENT",
     "ref": "11311984",
     "valor": "18900 €",
     "preco_novo": "47370 €",
@@ -14,11 +15,11 @@
     "cv": 8,
     "ubicacion": " 56 - LORIENT",
     "color": "Branco",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "",
     "seguimiento de": "Sí",
     "mantenimiento ": "",
-    "crit'Air": 2,
+    "crit_Air": 2,
     "potencia ": 163,
     "Tipo_de_caja_de_cambios": "Manual",
     "iva": "Sí",
@@ -27,7 +28,7 @@
     "energia": "Diesel",
     "desplazamiento ": "2299 ",
     "observaciones": "- Seguimiento del mantenimiento - Garantía Premium de 3 meses (solo para clientes en Francia)",
-    "equipamientos ": [
+    "equipamientos": [
       "Hermanadas de ruedas",
       "Aire acondicionado",
       "Cubo hidràulica-eléctrico",
@@ -47,10 +48,10 @@
       "Abs",
       "Dirección asistida"
     ],
-    "Estado_del_vehiculo": [
-      " Inspección técnica",
-      " Seguimiento de mantenimiento"
-    ],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "BENNE",
       "numero_de_puertas": "NC",
@@ -72,6 +73,7 @@
     "id": 2,
     "nome": "LAND ROVER DEFENDER 130 CHASSIS CAB 2.2 TD4 120 4WD",
     "km": "0 - 118270 km",
+    "cidade":"LORIENT",
     "ref": "11310298",
     "n": 533,
     "valor": "29900 €",
@@ -83,11 +85,11 @@
     "cv": 8,
     "ubicacion": " 56 - LORIENT",
     "color": "Branco",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "No",
-    "crit'Air": 2,
+    "crit_Air": 2,
     "potencia ": 163,
     "Tipo_de_caja_de_cambios": "Manual",
     "iva": "No",
@@ -96,15 +98,15 @@
     "energia": "Diesel",
     "desplazamiento ": "2198",
     "observaciones": "Suivi d'entretien - Prévoir révision - Absence autoradio - Manque de puissance à l'accélération - bruit de butée d'embrayage - Cric absent",
-    "equipamientos ": [
+    "equipamientos": [
       "Gancho",
       "Cierre centralizado",
       "Espejos retrovisores eléctricos"
     ],
-    "Estado_del_vehiculo": [
-      " Inspección técnica",
-      " Seguimiento de mantenimiento"
-    ],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "TRAVAUX",
       "numero_de_puertas": 2,
@@ -117,15 +119,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro2.jpg",
-      "/imageCarrosel/carro2Dt1.jpg",
-      "/imageCarrosel/carro2Dt2.jpg",
-      "/imageCarrosel/carro2Dt3.jpg"
+      "/imageCarrosel/carro2Dta1.jpg",
+      "/imageCarrosel/carro2Dta2.jpg",
+      "/imageCarrosel/carro2Dta3.jpg"
     ]
   },
   {
     "id": 3,
     "nome": "BMW X5 xDrive45e 394 ch BVA8 M Sport",
     "km": "2023 - 29345 km",
+    "cidade":"Lyon",
     "ref": "11306964",
     "n": 4,
     "valor": "62700 €",
@@ -137,11 +140,11 @@
     "cv": 17,
     "ubicacion": "56 - LORIENT",
     "color": "Negro metal",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "No",
-    "crit'Air": 1,
+    "crit_Air": 1,
     "energia": "Hybrid",
     "potencia ": 286,
     "norma_Euro": "NC",
@@ -150,7 +153,7 @@
     "CO2 (g/km)": "29 (Norma Inconnu)",
     "desplazamiento ": "2998",
     "observaciones": "- Véhicule vendu avec Fiche d'Identification - câbles T2-T2 et T2-220V",
-    "equipamientos ": [
+    "equipamientos": [
       "Gancho",
       "Cierre centralizado",
       "Espejos retrovisores eléctricos",
@@ -168,7 +171,10 @@
       "Eléctrico de sede que calienta",
       "Bluetooth"
     ],
-    "Estado_del_vehiculo": [" Bilan Experto", "Seguimiento de mantenimiento"],
+   "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "BREAK",
       "numero_de_puertas": 5,
@@ -181,15 +187,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro3.jpg",
-      "/imageCarrosel/carro3Dt1.jpg",
-      "/imageCarrosel/carro3Dt2.jpg",
-      "/imageCarrosel/carro3Dt3.jpg"
+      "/imageCarrosel/carro3Dta1.jpg",
+      "/imageCarrosel/carro3Dta2.jpg",
+      "/imageCarrosel/carro3Dta3.jpg"
     ]
   },
   {
     "id": 4,
     "nome": "ALFA ROMEO 2600 Spider",
     "km": "1964 - 8027 km",
+    "cidade":"Paris",
     "ref": "11297834",
     "n": 3,
     "valor": "71800 €",
@@ -201,11 +208,11 @@
     "cv": 15,
     "ubicacion": "56 - LORIENT",
     "color": "Rouge/Capote noir",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "No",
-    "crit'Air": "NC",
+    "crit_Air": "NC",
     "potencia ": 0,
     "Tipo_de_caja_de_cambios": "Manual",
     "iva": "No",
@@ -214,11 +221,11 @@
     "energia": "Gasolina",
     "desplazamiento ": "0",
     "observaciones": "- Défaillance critique : état général du chassis Enlèvement conseillé par plateau ou transporteur / Veilleuses restent allumé en permanence - Compteur 5 chiffres - avec défaillance critique",
-    "equipamientos ": ["Cuero", "Asiento de atras", "Cristales teñidos"],
-    "Estado_del_vehiculo": [
-      " Inspección técnica",
-      "Seguimiento de mantenimiento"
-    ],
+    "equipamientos": ["Cuero", "Asiento de atras", "Cristales teñidos"],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "CABRIOLET",
       "numero_de_puertas": 2,
@@ -231,15 +238,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro4.jpg",
-      "/imageCarrosel/carro4Dt1.jpg",
-      "/imageCarrosel/carro4Dt2.jpg",
-      "/imageCarrosel/carro4Dt3.jpg"
+      "/imageCarrosel/carro4Dta1.jpg",
+      "/imageCarrosel/carro4Dta2.jpg",
+      "/imageCarrosel/carro4Dta3.jpg"
     ]
   },
   {
     "id": 5,
     "nome": "TESLA MODEL S 90 kWh All-Wheel Drive",
     "km": "2016 - 102273 km",
+    "cidade":"Paris",
     "ref": "11224902",
     "n": 17,
     "valor": "21900 €",
@@ -251,11 +259,11 @@
     "cv": 9,
     "ubicacion": "56 - LORIENT",
     "color": "Bronce claramente",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "No",
-    "crit'Air": "Verte",
+    "crit_Air": "Verte",
     "potencia ": 0,
     "Tipo_de_caja_de_cambios": "Automática",
     "iva": "No",
@@ -264,7 +272,7 @@
     "energia": "Eléctrico",
     "desplazamiento ": "0",
     "observaciones": "- Suivi d'entretien - Capacité batterie/SOH estimée à 92% - Score Aviloo 94/100 - Usure habitacle - Câble de charge T2 - Charge gratuite à vie sur superchargeur Tesla. - Kit anticrevaison absent - Plage arrière manquante",
-    "equipamientos ": [
+    "equipamientos": [
       "Aire acondicionado auto climatizador",
       " Cuero",
       " Gps en color",
@@ -281,10 +289,10 @@
       "Cristales teñidos eléctricos av+ar",
       "Abs"
     ],
-    "Estado_del_vehiculo": [
-      " Inspección técnica",
-      "Seguimiento de mantenimiento"
-    ],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "CI",
       "numero_de_puertas": 5,
@@ -297,15 +305,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro5.jpg",
-      "/imageCarrosel/carro5Dt1.jpg",
-      "/imageCarrosel/carro5Dt2.jpg",
-      "/imageCarrosel/carro5Dt3.jpg"
+      "/imageCarrosel/carro5Dta1.jpg",
+      "/imageCarrosel/carro5Dta2.jpg",
+      "/imageCarrosel/carro5Dta3.jpg"
     ]
   },
   {
     "id": 6,
     "nome": "VOLKSWAGEN Polo 1.6 TDI 95 S&S BVM5 Lounge Business",
     "km": "2019 - 70939 km",
+    "cidade":"LORIENT",
     "ref": "11224902",
     "n": 21,
     "valor": "13100 €",
@@ -317,11 +326,11 @@
     "cv": 5,
     "ubicacion": " 69 - LYON",
     "color": "Negro metal",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "No",
-    "crit'Air": "2",
+    "crit_Air": "2",
     "potencia ": 95,
     "Tipo_de_caja_de_cambios": "Manual",
     "iva": "Sí",
@@ -330,7 +339,7 @@
     "energia": "Diesel",
     "desplazamiento ": "1598",
     "observaciones": "- Garantía Premium de 3 meses (solo para clientes en Francia)",
-    "equipamientos ": [
+    "equipamientos": [
       "Aire acondicionado auto climatizador",
       " Cuero",
       " Gps en color",
@@ -347,10 +356,10 @@
       "Cristales teñidos eléctricos av+ar",
       "Abs"
     ],
-    "Estado_del_vehiculo": [
-      " Inspección técnica",
-      "Seguimiento de mantenimiento"
-    ],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "CI",
       "numero_de_puertas": 5,
@@ -363,15 +372,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro6.jpg",
-      "/imageCarrosel/carro6Dt1.jpg",
-      "/imageCarrosel/carro6Dt2.jpg",
-      "/imageCarrosel/carro6Dt3.jpg"
+      "/imageCarrosel/carro6Dta1.jpg",
+      "/imageCarrosel/carro6Dta2.jpg",
+      "/imageCarrosel/carro6Dta3.jpg"
     ]
   },
   {
     "id": 7,
     "nome": "MAZDA MX-30 e-Skyactiv 145 ch Prime-Line",
     "km": "2022 - 35318 km",
+    "cidade":"LORIENT",
     "ref": "11306223",
     "n": 11,
     "valor": "14700 €",
@@ -383,11 +393,11 @@
     "cv": 6,
     "ubicacion": "69 - LYON",
     "color": " Gris medio",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "",
-    "crit'Air": "Verte",
+    "crit_Air": "Verte",
     "potencia ": 145,
     "Tipo_de_caja_de_cambios": "Automática",
     "iva": "Sí",
@@ -396,7 +406,7 @@
     "energia": "Eléctrico",
     "desplazamiento ": "0",
     "observaciones": "- Export impossible- Suivi d'entretien - Capacité batterie/SOH estimée à 94 % - Câble T2 220V - Batterie garantie 8 ans selon les normes constructeur- Apple carplay : Android auto - Véhicule vendu avec Fiche d'Identification - - Garantie 3 mois Prémium(client en France uniquement)",
-    "equipamientos ": [
+    "equipamientos": [
       "Aire acondicionado auto climatizador",
       " Cuero",
       " Gps en color",
@@ -413,7 +423,10 @@
       "Cristales teñidos eléctricos av+ar",
       "Abs"
     ],
-    "Estado_del_vehiculo": [" Bilan Experto", "Seguimiento de mantenimiento"],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "BREAK",
       "numero_de_puertas": 5,
@@ -426,15 +439,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro7.jpg",
-      "/imageCarrosel/carro7Dt1.jpg",
-      "/imageCarrosel/carro7Dt2.jpg",
-      "/imageCarrosel/carro7Dt3.jpg"
+      "/imageCarrosel/carro7Dta1.jpg",
+      "/imageCarrosel/carro7Dta2.jpg",
+      "/imageCarrosel/carro7Dta3.jpg"
     ]
   },
   {
     "id": 8,
     "nome": "VOLKSWAGEN CRAFTER VAN 30 L3H2 2.0 TDI 140 CH",
     "km": "2020 - 68076 km",
+    "cidade":"LORIENT",
     "ref": "11299145",
     "n": 15,
     "valor": "19500 €",
@@ -446,11 +460,11 @@
     "cv": 7,
     "ubicacion": "69 - LYON",
     "color": "Negro",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "No",
     "seguimiento de": "Sí",
     "mantenimiento ": "",
-    "crit'Air": "2",
+    "crit_Air": "2",
     "potencia ": 140,
     "Tipo_de_caja_de_cambios": "Manual",
     "iva": "No",
@@ -459,7 +473,7 @@
     "energia": "Eléctrico",
     "desplazamiento ": "1968",
     "observaciones": "- Export impossible- Véhicule vendu avec Fiche d'Identification - Garantie 3 mois Prémium(client en France uniquement)",
-    "equipamientos ": [
+    "equipamientos": [
       "Aire acondicionado auto climatizador",
       " Cuero",
       " Gps en color",
@@ -476,7 +490,10 @@
       "Cristales teñidos eléctricos av+ar",
       "Abs"
     ],
-    "Estado_del_vehiculo": [" Bilan Experto", "Seguimiento de mantenimiento"],
+   "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "FOURGON",
       "numero_de_puertas": "NC",
@@ -489,15 +506,16 @@
     },
     "fotos": [
       "/imageCarrosel/carro8.jpg",
-      "/imageCarrosel/carro8Dt1.jpg",
-      "/imageCarrosel/carro8Dt2.jpg",
-      "/imageCarrosel/carro8Dt3.jpg"
+      "/imageCarrosel/carro8Dta1.jpg",
+      "/imageCarrosel/carro8Dta2.jpg",
+      "/imageCarrosel/carro8Dta3.jpg"
     ]
   },
   {
     "id": 9,
     "nome": "VOLKSWAGEN Golf 2.0 TDI SCR 150 DSG7 R-Line",
     "km": "2021 - 175789 km",
+    "cidade":"LORIENT",
     "ref": "11287099",
     "n": 8,
     "valor": "16700 €",
@@ -509,11 +527,11 @@
     "cv": 8,
     "ubicacion": "13 - MARSEILLE",
     "color": "Negro metal",
-    "carnet de": "No",
+    "carnet_de": "No",
     "mantenimiento": "",
     "seguimiento de": "Sí",
     "mantenimiento ": "",
-    "crit'Air": "2",
+    "crit_Air": "2",
     "potencia ": 150,
     "Tipo_de_caja_de_cambios": "Automática",
     "iva": "Sí",
@@ -522,7 +540,7 @@
     "energia": "Diesel",
     "desplazamiento ": "1968",
     "observaciones": "- Suivi d'entretien - Prévoir entretien - Kit anticrevaison absent",
-    "equipamientos ": [
+    "equipamientos": [
       "Aire acondicionado auto climatizador",
       " Cuero",
       " Gps en color",
@@ -539,7 +557,10 @@
       "Cristales teñidos eléctricos av+ar",
       "Abs"
     ],
-    "Estado_del_vehiculo": [" Bilan Experto", "Seguimiento de mantenimiento"],
+    "Estado_del_vehiculo": {
+      "um": " Inspección técnica",
+      "dois": "Seguimiento de mantenimiento"
+    },
     "caracteristicas_tecnicas": {
       "carroceria ": "BREAK",
       "numero_de_puertas": "5",
@@ -552,9 +573,9 @@
     },
     "fotos": [
       "/imageCarrosel/carro9.jpg",
-      "/imageCarrosel/carro9Dt1.jpg",
-      "/imageCarrosel/carro9Dt2.jpg",
-      "/imageCarrosel/carro9Dt3.jpg"
+      "/imageCarrosel/carro9Dta1.jpg",
+      "/imageCarrosel/carro9Dta2.jpg",
+      "/imageCarrosel/carro9Dta3.jpg"
     ]
   }
 ]
