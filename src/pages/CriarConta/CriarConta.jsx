@@ -1,8 +1,25 @@
+import { useEffect } from "react";
+import { AuthCriarConta } from "../../context/createCountLogin";
 import CardSuporte from "./CardSuporte";
 import * as S from "./styles";
 import { paises, vpAuto } from "./utils";
+import { useForm } from "react-hook-form";
 
 export default function CriarConta() {
+
+  const { criarConta } = AuthCriarConta();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  useEffect(() => {
+    window.scrollTo({ behavior: "auto", top: 0 });
+  },[])
+
+
   return (
     <S.Section>
       <S.ContainerBanner>
@@ -25,23 +42,44 @@ export default function CriarConta() {
           el certificado de venta y realizar la declaración SIV de su compra.
         </p>
 
-        <S.Formulario>
+        <S.Formulario onSubmit={handleSubmit(criarConta)}>
           <S.WrapperInputs>
             <fieldset>
               <label htmlFor="Apellidos*">Apellidos*</label>
-              <input type="text" />
+              <input type="text" {...register("apelido")} />
             </fieldset>{" "}
             <fieldset>
               <label htmlFor="Nombre*">Nombre*</label>
-              <input type="text" />
+              <input
+                type="text"
+                {...register("nome", { required: true })}
+                style={{
+                  border: errors.nome && "2px solid red",
+                  outline: errors.nome && "none",
+                }}
+              />
             </fieldset>{" "}
             <fieldset>
               <label htmlFor="Correo electrónico*">Correo electrónico*</label>
-              <input type="email" />
+              <input
+                type="email"
+                {...register("email", { required: true })}
+                style={{
+                  border: errors.email && "2px solid red",
+                  outline: errors.email && "none",
+                }}
+              />
             </fieldset>
             <fieldset>
               <label htmlFor="Contraseña*">Contraseña*</label>
-              <input type="password" />
+              <input
+                type="password"
+                {...register("senha", { required: true })}
+                style={{
+                  border: errors.senha && "2px solid red",
+                  outline: errors.senha && "none",
+                }}
+              />
             </fieldset>
             <fieldset>
               <label htmlFor="País*">País*</label>
@@ -112,12 +150,14 @@ export default function CriarConta() {
               personal llevado a cabo por VPAuto, consulte la política de
               privacidad.
             </p>
-            <div style={{width:"100%",display:"flex",justifyContent:"end"}}>
+            <div
+              style={{ width: "100%", display: "flex", justifyContent: "end" }}
+            >
               <S.ButtonValidar>Validar</S.ButtonValidar>
             </div>
           </S.ContainerTexto>
         </S.Formulario>
-      <CardSuporte/>
+        <CardSuporte />
       </S.ContainerFormulario>
     </S.Section>
   );

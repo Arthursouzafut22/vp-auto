@@ -129,7 +129,8 @@ export const BoxGaleriaImagemCarros = styled.div`
   position: relative;
 
   .img-1{
-    height: 100%;
+    /* height: 100%; */
+    min-height: 100%;
   }
 
   @media screen and (max-width: 972px) {

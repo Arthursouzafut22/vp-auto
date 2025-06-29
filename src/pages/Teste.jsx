@@ -1,9 +1,9 @@
-import CriarConta from "../components/CriarConta/ModalCriarContaeLogar";
+import ModalContaCriadaComSucesso from "./CriarConta/ModalContaCriadaComSucesso";
 
 
 export default function Teste(){
     return <>
-     {/* <CriarConta/> */}
+     <ModalContaCriadaComSucesso/>
     
     </>
 }

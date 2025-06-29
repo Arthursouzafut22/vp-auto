@@ -19,6 +19,10 @@ export default function Header() {
   const { mobile } = useMedia("(max-width:1150px)");
   const navigate = useNavigate();
   const { modalAtivo, setModalAtivo } = UseGeral();
+  const [token] = useState(() => {
+    const Token = localStorage?.getItem("token");
+    return Token ? Token : null;
+  });
 
   useEffect(() => {
     function closeModalGlobal() {
@@ -92,7 +96,11 @@ export default function Header() {
             </Link>
           </S.ContainerRadio>
         )}
-        <ContainerLogin modalAtivo={modalAtivo} openModal={openModal} />
+        <ContainerLogin
+          token={token}
+          modalAtivo={modalAtivo}
+          openModal={openModal}
+        />
 
         <S.NavLink
           style={{ color: " #383b3e" }}

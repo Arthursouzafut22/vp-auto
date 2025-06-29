@@ -136,3 +136,65 @@ export const CardSuporte = styled.div`
     font-size: 22px;
   }
 `;
+
+export const ContainerSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  top: 0;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 10000;
+`;
+
+export const Modal = styled.div`
+  background-color: #ffffff;
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  
+  @media (max-width: 297px){
+    overflow-x: scroll;
+
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+  }
+
+  .wrapper-x {
+    margin-top: 25px;
+    p {
+      text-align: center;
+      color: #444;
+    }
+
+    button {
+      margin: 0 auto;
+      display: block;
+      background-color: #0099dd;
+      border-radius: 3px;
+      padding: 20px;
+      border: none;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 10px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+`;

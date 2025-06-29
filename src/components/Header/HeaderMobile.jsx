@@ -13,6 +13,12 @@ export default function HeaderMobile() {
   const [menuMobile, setMenuMobile] = useState(false);
   const { mobile } = useMedia("(max-width:767px)");
 
+   const [ token ] = useState(() => {
+    const Token = localStorage?.getItem("token");
+    return Token ? Token : null;
+   });
+  
+
   useEffect(() => {
     function closeModalGlobal() {
       setModalAtivo(false);
@@ -59,6 +65,7 @@ export default function HeaderMobile() {
         modalAtivo={modalAtivo}
         openModal={openModal}
         mobile={mobile}
+        token={token}
       />
       {menuAtivo && <ModalMenu />}
       {menuMobile && <MenuMobile closeMenuMobile={closeMenuMobile} />}

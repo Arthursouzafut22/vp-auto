@@ -5,11 +5,14 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { useState } from "react";
 import ContainerInputs from "./ContainerInputs";
 import Carrosel from "../../components/Carrosel/Carrosel";
+import ModalContaCriadaComSucesso from "../CriarConta/ModalContaCriadaComSucesso";
+import { AuthCriarConta } from "../../context/createCountLogin";
 
 
 export default function Home() {
   const { mobile } = useMedia("(max-width:970px)");
   const [inputsAtivo, setInputsAtivo] = useState(false);
+  const { activeCriarConta } = AuthCriarConta();
 
   return (
     <S.Home>
@@ -94,10 +97,8 @@ export default function Home() {
           </S.WrapperFormulario>
         </div>
       </S.ContainerGlobal>
-
-
-      <Carrosel/>
-
+      <Carrosel />
+      {activeCriarConta && <ModalContaCriadaComSucesso />}
     </S.Home>
   );
 }

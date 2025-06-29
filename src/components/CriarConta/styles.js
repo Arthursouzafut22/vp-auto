@@ -5,7 +5,7 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.42);
+  background-color: rgba(0, 0, 0, 0.58);
   position: fixed;
   width: 100%;
   z-index: 2000;

@@ -35,8 +35,9 @@ export default function Vehiculo() {
   });
 
   useEffect(() => {
+    window.scrollTo({ behavior: "auto", top: 0 });
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 3); // 3 dias a partir de agora
+    targetDate.setDate(targetDate.getDate() + 3);
 
     const interval = setInterval(() => {
       const now = new Date();

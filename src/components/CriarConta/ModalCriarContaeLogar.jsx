@@ -4,6 +4,7 @@ import * as S from "./styles";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { AuthLogin } from "../../context/contextLogin";
 
 const ur1Family =
   "https://static.vpauto.fr/bundles/vpauto/frontend/images/particuliers.svg?v20250612";
@@ -22,16 +23,13 @@ const imgSuporte =
 export default function ModalCriarContaeLogar() {
   const { mobile } = useMedia("(max-width:600px)");
   const { closeModal, setModalAtivo } = UseGeral();
+  const { enviarDadosLogin } = AuthLogin();
   const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-
-  function enviarDadosLogin(data) {
-    console.log(data);
-  }
 
   function redirectRouter(){
     closeModal();

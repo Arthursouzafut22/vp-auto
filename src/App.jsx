@@ -1,17 +1,13 @@
 import Router from "./routes/Routes";
 import { GlobalStyles } from "./Styles/GlobalStyles";
-import ContextGeral, { UseGeral } from "./context/geralContext";
-import CriarConta from "./components/CriarConta/ModalCriarContaeLogar";
+import ContextGeral from "./context/geralContext";
 
 function App() {
-  // const { activeModalLogin } = UseGeral();
   return (
     <>
       <ContextGeral>
         <GlobalStyles />
-        <Router/>
-          {/* {activeModalLogin && <CriarConta />} */}
-        
+        <Router />
       </ContextGeral>
     </>
   );
